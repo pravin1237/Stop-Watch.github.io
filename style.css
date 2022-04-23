@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Kaushan+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+   background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 194, 248));
+   height: 102.7vh;
+
+}
+
+
+/**** NAME SECTION ****/
+
+#hdname{
+    font-size: 5rem;
+    color: rgb(245, 103, 2);
+    text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;    
+}
+
+
+/**** BOX SECTION ****/
+
+.watch{
+    text-align: center;
+    background-color: none;
+    width: 100%;
+    max-width:450px ;
+    margin: 4rem auto;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 11px 11px 10px 10px rgb(202, 198, 198);
+    color: white;
+}
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+   /* font-family: 'Kaushan Script', cursive; */
+   font-family: 'Rubik Wet Paint', cursive;    
+   
+}
+
+
+/**** BUTTON SECTION ****/
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    font-size: 1.125rem;
+    font-family: 'Bangers', cursive; 
+    cursor: pointer;
+    color: silver;
+    background-color: rgb(0, 0, 0);
+    margin: 0 0.5rem; 
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+button:hover{
+    opacity: 0.5;
+}
+button:active{
+    background-color: red;
+}
+
+
+/*For Responsive*/
+
+@media screen and (max-width:648px) {
+    #hdname{
+        font-size: 2rem;
+    }
+    .watch{
+        text-align: center;
+        width: 100%;
+        max-width:400px ;
+        padding: 2rem 1rem;
+    }
+    .time{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+    }
+    .controls{
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin: 0 0.5rem; 
+        padding: 0.7rem 1rem;
+        border-radius: 0.5rem;
+    }
+}
